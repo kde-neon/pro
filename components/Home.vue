@@ -51,6 +51,12 @@
     <!-- Info container -->
     <info />
 
+    <!-- Tools container -->
+    <tools />
+
+    <!-- Projects -->
+    <project />
+
   </div>
 </template>
 <script>
