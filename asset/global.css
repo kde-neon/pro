@@ -18,11 +18,24 @@
   margin: 0;
   padding: 0;
   border: none;
+  outline: none;
 }
 
 body {
   font-family: ziku;
   font-weight: lighter;
+}
+
+/* Defult */
+.def {
+  user-zoom: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
 }
 
 /* App logo */
@@ -39,21 +52,22 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  min-height: 100vh;
 }
 
 .bg {
   color: #fff;
-  background-color: var(--bg);
+  background: var(--bg);
 }
 
 /* Intro image */
 .intro-img {
+  top: 50%;
+  left: 50%;
   width: 100%;
   max-width: 500px;
   min-width: 200px;
-  margin: 0 auto;
-  padding: 100px 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -74,8 +88,14 @@ body {
   z-index: 99;
 }
 
+/* Position relative */
 .pr {
   position: relative;
+}
+
+/* Position absolute */
+.pa {
+  position: absolute;
 }
 
 /* small icon + rotate */
@@ -93,4 +113,53 @@ body {
 /* small icon svg */
 .icn-sml svg {
   width: 100%;
+}
+
+/* for all element 100% */
+.full {
+  width: 100%;
+}
+
+.rou {
+  border-radius: 50%;
+}
+
+.b-s {
+  width: 20px;
+  height: 20px;
+  background: red;
+}
+
+.b-m {
+  width: 40px;
+  height: 40px;
+  background: var(--bg);
+}
+
+.b-l {
+  width: 55px;
+  height: 55px;
+  background: yellow;
+}
+
+/* Element object */
+.object {
+  width: 100%;
+  padding: 5px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+/* button */
+.btn {
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 40px;
+  background: #006eff;
+  border-radius: 4px;
+  transition: all .3s ease;
+}
+
+.btn:active {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.226);
 }
