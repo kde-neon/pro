@@ -24,7 +24,7 @@
 
       <!-- intro image -->
       <div class="intro-img flex">
-        <img width="100%" src="../asset/img/intro.webp" alt="intro image" />
+        <img class="def" width="100%" src="../asset/img/intro.webp" alt="intro image" />
       </div>
 
       <!-- Service -->
@@ -60,6 +60,8 @@ export default {
 </script>
 <style>
 .service {
-  margin-left: 20px;
+  left: 20px;
+  bottom: 80px;
+  position: absolute;
 }
 </style>
