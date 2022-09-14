@@ -20,9 +20,9 @@
       <center class="inf">
         <h2>I create</h2>
         <p>
-          Front End Single Page App & Progressive Web App & Design I Have More Then 3
-          Years Experience I Did Some Big Project Those Take To Finish Mont After Month. I
-          Love My Work
+          Front End Single Page App & Progressive Web App & I do Design. I Have More Then 3
+          Years Experience, I Did Some Big Project Those Take To Finish Mont After Month. I
+          Love My Work. The creativity and enthusiasm of my choice.
         </p>
         <br />
       </center>
