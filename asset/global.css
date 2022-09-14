@@ -25,13 +25,72 @@ body {
   font-weight: lighter;
 }
 
+/* App logo */
+.app-logo {
+  width: 80px;
+  height: 20px;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
 .full-card {
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 .bg {
   color: #fff;
   background-color: var(--bg);
+}
+
+/* Intro image */
+.intro-img {
+  width: 100%;
+  max-width: 500px;
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+}
+
+.love-top-sml {
+  left: 241px;
+  z-index: 1;
+  position: absolute;
+}
+
+.in-2 {
+  z-index: 99;
+}
+
+.pr {
+  position: relative;
+}
+
+/* small icon + rotate */
+.icon-sml {
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+}
+
+/* small icon svg */
+.icn-sml svg {
+  width: 100%;
 }
