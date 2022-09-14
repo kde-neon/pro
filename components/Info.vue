@@ -5,7 +5,7 @@
       <!-- container object -->
       <div class="object flex mt-10px">
         <!-- Asset image -->
-        <div class="asset-img">
+        <div @click.right.prevent="" class="asset-img">
           <img class="full def" src="../asset/img/Crean.webp" alt="Crean png" />
         </div>
 

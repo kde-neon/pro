@@ -23,7 +23,7 @@
       </div>
 
       <!-- intro image -->
-      <div class="intro-img flex">
+      <div @click.right.prevent="" class="intro-img flex">
         <img class="def" width="100%" src="../asset/img/intro.webp" alt="intro image" />
       </div>
 
