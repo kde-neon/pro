@@ -51,13 +51,13 @@ export default {
       projects: [
         {
           name: "Chat Bot",
-          details: "small chat bot for web app.",
+          details: "small chat bot for web app",
           to: "/about",
           img: "project-i.jpg",
         },
         {
-          name: "Simple word",
-          details: "Just hello world project",
+          name: "Landging page",
+          details: "Landging page with css",
           to: "/about",
           img: "project-ii.jpg",
         },
@@ -168,7 +168,7 @@ export default {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: dashed 3px #ffffff;
 }
 
