@@ -57,6 +57,9 @@
     <!-- Projects -->
     <project />
 
+    <!-- Fotter container -->
+    <fotter />
+
   </div>
 </template>
 <script>
