@@ -48,6 +48,11 @@ export default {
 };
 </script>
 <style scoped>
+
+.info-container  {
+  margin: 20vh 0;
+}
+
 .asset-img {
   width: 130px;
   height: 130px;

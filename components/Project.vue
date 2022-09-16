@@ -77,15 +77,12 @@ export default {
       }
     },
   },
-  setup() {
-    console.log("You can run js code");
-  },
 };
 </script>
 <style scoped>
 .project-container {
   width: 95%;
-  margin: 0 auto;
+  margin: 20vh auto;
 }
 
 .project-card-container {

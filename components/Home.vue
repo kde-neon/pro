@@ -1,6 +1,6 @@
 <template>
   <!-- Home view -->
-  <div class="Home-view">
+  <div keep-scroll-postion class="Home-view">
     <!-- Home enter front page -->
     <div class="full-card bg">
       <!-- app logo -->
@@ -65,6 +65,7 @@
 <script>
 export default {
   name: "Home",
+  middleware: ['scroll']
 };
 </script>
 <style>

@@ -5,9 +5,7 @@
   </div>
 </template>
 <script>
-import auth from '~/middleware/auth';
-
 export default {
-  middleware: [auth]
+  middleware: ['scroll']
 }
 </script>
