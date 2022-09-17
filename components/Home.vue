@@ -74,4 +74,26 @@ export default {
   bottom: 80px;
   position: absolute;
 }
+
+@media only screen and (min-width: 768px){
+  .service {
+    left: 0;
+    width: 100%;
+    text-align: center !important;
+  }
+  .service .text {
+    position: relative;
+    display: inline-block;
+    z-index: 9999;
+    justify-content: center !important;
+  }
+  .love-top-sml {
+    right: 0;
+    width: 25px;
+    height: 25px;
+    z-index: -9;
+    margin-top: -30px;
+    position: absolute;
+  }
+}
 </style>
