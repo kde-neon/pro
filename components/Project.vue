@@ -28,7 +28,7 @@
             <NuxtLink class="def" :to="obj.to">
               <div class="icon-border flex">
                 <div class="icon flex">
-                  <svg width="100%" viewBox="0 0 384 512">
+                  <svg width="100%" height="100%" viewBox="0 0 384 512">
                     <path
                       fill="#fff"
                       d="M361 215c14.3 8.8 23 24.3 23 41s-8.7 32.2-23 40.1l-287.97 176c-14.82 9.9-33.37 10.3-48.51 1.8A48.02 48.02 0 0 1 0 432V80a48.02 48.02 0 0 1 24.52-41.87 48.019 48.019 0 0 1 48.51.91L361 215z"
@@ -81,8 +81,14 @@ export default {
 </script>
 <style scoped>
 .project-container {
-  width: 95%;
+  width: 90%;
   margin: 20vh auto;
+}
+
+@media only screen and (max-width: 320px) {
+  .project-container {
+    width: 99%;
+  }
 }
 
 .project-card-container {
@@ -181,7 +187,6 @@ export default {
 .icon-border .icon svg {
   width: 15px;
   height: 15px;
-  margin-left: 3px;
 }
 
 .icon-border:hover {
@@ -194,6 +199,7 @@ export default {
 }
 
 .icon-border:hover svg {
+  transition: all 0.2s ease-in-out;
   animation: rotateNg 10s linear infinite;
 }
 

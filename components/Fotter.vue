@@ -3409,7 +3409,7 @@
       <!-- Social network link -->
       <div class="flex bottom-info">
         <div class="flex anti-logo">
-          <div class="icon">
+          <div title="Anti LGBT | Stop bad" class="icon">
             <svg viewBox="0 0 2514.6 674.2">
               <g data-name="Layer 2">
                 <g data-name="<Layer>">
@@ -3468,8 +3468,8 @@
             </svg>
           </div>
           <div>⨉</div>
-          <div class="icon">
-            <svg viewBox="0 0 247.1 70.9">
+          <div title="Stop Smoking | Stop killing you" class="icon">
+            <svg  viewBox="0 0 247.1 70.9">
               <g data-name="1">
                 <path fill="#e6e7e8" d="m11.723 38.633.04-2.5 33.235.523-.039 2.5z" />
                 <path fill="#d6d7d8" d="m11.604 43.29.074-4.7 33.236.522-.074 4.7z" />

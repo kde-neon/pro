@@ -10,10 +10,10 @@
         </div>
 
         <!-- buble small and big for animation -->
-        <div class="pa b-s rou tf-1"></div>
-        <div class="pa b-l rou tf-2"></div>
-        <div class="pa b-m rou tf-3"></div>
-        <div style="pa background: #bade6c;" class="b-m rou tf-4"></div>
+        <div class="pa b-s rou"></div>
+        <div class="pa b-l rou"></div>
+        <div class="pa b-m rou"></div>
+        <div class="pa b-m rou"></div>
       </div>
 
       <!-- Hi -->
@@ -50,7 +50,7 @@ export default {
 <style scoped>
 
 .info-container  {
-  margin: 20vh 0;
+  margin: 30vh 0;
 }
 
 .asset-img {
@@ -60,34 +60,12 @@ export default {
   background: #6f00ff;
 }
 
-.tf-1 {
-  background: orangered;
-  transform: translate(90px, -100px);
-}
-
-.tf-2 {
-  background: orange;
-  transform: translate(-90px, -100px);
-}
-
-.tf-3 {
-  transform: translate(60px, 98px);
-}
-
-.tf-4 {
-  background: #ff00f2;
-  transform: translate(-200px, 30px);
-}
-
-.inf {
-  margin-top: 30px;
-}
 .inf {
   width: 95%;
+  margin-top: 30px;
   max-width: 500px;
   margin: 25px auto;
+  font-family: ziku !important;
 }
-.inf p {
-  font-family: ziku-c !important;
-}
+
 </style>

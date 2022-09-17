@@ -43,7 +43,7 @@
             </svg>
           </div>
         </div>
-        <p>I create web based front end user interface by using latest technology.</p>
+        <p>I create web based <u style="color: #00ff5a; cursor: pointer;" title="Short: Don't create bad product.">Halal</u> front end user interface by using latest technology.</p>
       </div>
 
     </div>
