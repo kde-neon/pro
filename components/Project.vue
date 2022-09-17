@@ -8,7 +8,7 @@
 
     <!-- Projects card container -->
     <div @wheel.prevent="slide" ref="slide" class="project-card-container flex">
-      <div @wheel.prevent="slide" v-for="(obj, i) in projects" :key="i" class="card flex">
+      <div @click.right.prevent="" @wheel.prevent="slide" v-for="(obj, i) in projects" :key="i" class="card flex">
         <!-- img -->
         <div class="img">
           <img

@@ -1,8 +1,8 @@
 <template>
   <div class="tools-container">
     <!-- Tools image -->
-    <div class="img-tool">
-      <img class="full" src="../asset/img/Trofie.webp" alt="Tools" srcset="" />
+    <div @click.right.prevent="" class="img-tool def">
+      <img class="full def" src="../asset/img/Trofie.webp" alt="Tools" srcset="" />
     </div>
 
     <!-- Tool title -->
