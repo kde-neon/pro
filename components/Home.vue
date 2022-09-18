@@ -43,9 +43,16 @@
             </svg>
           </div>
         </div>
-        <p>I create web based <u style="color: #00ff5a; cursor: pointer;" title="Short: Don't create bad product.">Halal</u> front end user interface by using latest technology.</p>
+        <p>
+          I create web based
+          <u
+            style="color: #00ff5a; cursor: pointer"
+            title="Short: Don't create bad product."
+            >Halal</u
+          >
+          front end user interface by using latest technology.
+        </p>
       </div>
-
     </div>
 
     <!-- Info container -->
@@ -59,13 +66,47 @@
 
     <!-- Fotter container -->
     <fotter />
-
   </div>
 </template>
 <script>
 export default {
   name: "Home",
-  middleware: ['scroll']
+  data() {
+    return {
+      scp: 0,
+    };
+  },
+  mounted() {
+    var top = 0;
+
+    window.onscroll = () => {
+      top = window.pageYOffset;
+    };
+
+    // Get inner text and splite by span
+    // Add every element a class
+    var anm = document.querySelector(".anm-text");
+    var anmText = anm.innerText.split(" ");
+    console.log(anmText);
+
+    var store = [];
+    anm.innerHTML = "";
+    anmText.forEach((i, ind)=> {
+      anm.innerHTML += `<span class="anw">${i}&nbsp;</span>`;
+    });
+
+
+    var anmWord = document.querySelectorAll(".anw");
+    for (var i = 0; i < anmWord.length; i++) {
+      (function (speed, i) {
+        setTimeout(function () {
+          anmWord[i].classList.add("on");
+        }, speed);
+      })(i * 50, i);
+    }
+
+  },
+  middleware: ["scroll"],
 };
 </script>
 <style>
@@ -75,7 +116,19 @@ export default {
   position: absolute;
 }
 
-@media only screen and (min-width: 768px){
+.anw {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(80px);
+  transition: all .3s ease;
+}
+
+.anw.on {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+@media only screen and (min-width: 768px) {
   .service {
     left: 0;
     width: 100%;

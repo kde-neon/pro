@@ -19,10 +19,9 @@
       <!-- Hi -->
       <center class="inf">
         <h2>I create</h2>
-        <p>
-          Front end single page app & progressive web app & I do design. I have more then 3
-          years experience, I did some big project those take to finish month after month. I
-          love my work. The creativity and enthusiasm of my choice.
+        <p class="anm-text">Front end single page app & progressive web app & I do design. I have more then
+          3 years experience, I did some big project those take to finish month after
+          month. I love my work. The creativity and enthusiasm of my choice.
         </p>
         <br />
       </center>
@@ -37,19 +36,12 @@ export default {
     };
   },
 
-  mounted() {
-    window.onscroll = () => {
-      this.scp = window.pageYOffset;
-    };
-  },
-
   // Component name
   name: "info",
 };
 </script>
 <style scoped>
-
-.info-container  {
+.info-container {
   margin: 30vh 0;
 }
 
@@ -67,5 +59,4 @@ export default {
   margin: 25px auto;
   font-family: ziku !important;
 }
-
 </style>
