@@ -79,32 +79,54 @@ export default {
   mounted() {
     var top = 0;
 
-    window.onscroll = () => {
-      top = window.pageYOffset;
-    };
-
     // Get inner text and splite by span
     // Add every element a class
     var anm = document.querySelector(".anm-text");
     var anmText = anm.innerText.split(" ");
-    console.log(anmText);
 
-    var store = [];
     anm.innerHTML = "";
-    anmText.forEach((i, ind)=> {
+    anmText.forEach((i) => {
       anm.innerHTML += `<span class="anw">${i}&nbsp;</span>`;
     });
 
-
-    var anmWord = document.querySelectorAll(".anw");
-    for (var i = 0; i < anmWord.length; i++) {
-      (function (speed, i) {
-        setTimeout(function () {
-          anmWord[i].classList.add("on");
-        }, speed);
-      })(i * 50, i);
+    // Info --> animated word one by one function
+    function anm_word(classAdd, clas, time) {
+      var time = time ? time : 30;
+      var anmWord = document.querySelectorAll(clas);
+      for (var i = 0; i < anmWord.length; i++) {
+        (function (speed, i) {
+          setTimeout(function () {
+            if(classAdd){
+              anmWord[i].classList.add("on");
+            }else {
+              anmWord[i].classList.remove("on");
+            }
+          }, speed);
+        })(i * time, i);
+      }
     }
 
+    let info = document.getElementById("info");
+    let infoPosition = info.getBoundingClientRect().bottom - window.innerHeight;
+    let infoImg = document.querySelector(".info-img")
+    let anmTitle = document.querySelector(".anmTitle");
+
+    window.onscroll = () => {
+      top = window.pageYOffset;
+
+      // if clint view info component
+      if (infoPosition < top) {
+        anm_word(true, ".anw");
+        anm_word(false, ".buble", 400)
+        infoImg.classList.add("on");
+        anmTitle.classList.add("on")
+      }else {
+        anm_word(false, ".anw");
+        anm_word(true, ".buble", 400);
+        infoImg.classList.remove("on");
+        anmTitle.classList.remove("on")
+      }
+    };
   },
   middleware: ["scroll"],
 };
@@ -120,7 +142,7 @@ export default {
   opacity: 0;
   display: inline-block;
   transform: translateY(80px);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .anw.on {
