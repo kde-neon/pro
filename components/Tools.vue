@@ -1,12 +1,12 @@
 <template>
   <div class="tools-container">
     <!-- Tools image -->
-    <div @click.right.prevent="" class="img-tool def">
+    <div @click.right.prevent="" class="img-tool on def">
       <img class="full def" src="../asset/img/Trofie.webp" alt="Tools" srcset="" />
     </div>
 
     <!-- Tool title -->
-    <center>
+    <center class="tool-info on">
       <h2>Production Tools</h2>
       <span>My most used production tools</span>
       <br /><br />
@@ -14,7 +14,7 @@
 
     <!-- Production tools are -->
     <div class="tec-cont flex">
-      <div v-for="(name, i) in tools" :key="i" class="list flex">
+      <div v-for="(name, i) in tools" :key="i" class="list flex tool-box on">
         <!-- Tool icon -->
         <div class="icon flex">
           <svg width="100%" height="100%" viewBox="0 0 512 512">
@@ -34,12 +34,7 @@
       </div>
     </div>
 
-    <br>
-
-    <!-- Connect with me button -->
-    <center>
-      <button class="btn">Connect</button>
-    </center>
+    <br />
 
   </div>
 </template>
@@ -69,8 +64,23 @@ export default {
 
 /* Image tools */
 .img-tool {
+  opacity: 1;
   width: 150px;
   margin: 0 auto;
+  transition: all .4s ease;
+}
+
+.tool-info {
+  opacity: 1;
+  filter: blur(0px);
+  transition: all .4s ease;
+}
+
+.img-tool.on,
+.tool-info.on {
+  opacity: 0;
+  filter: blur(20px);
+  transform: translateY(400px);
 }
 
 /* tools list */
@@ -103,6 +113,18 @@ export default {
 
 .list:hover {
   background: rgba(0, 132, 255, 0.13);
-  transform: matrix3d(1, 0, 0, 0, 0, 1, 5, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 1.5, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+
+.tool-box {
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 0.4s ease;
+}
+
+.tool-box.on {
+  opacity: 0;
+  filter: blur(20px);
+  transform: translateY(400px);
 }
 </style>

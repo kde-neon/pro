@@ -106,10 +106,16 @@ export default {
       }
     }
 
+    // Info component all selector
     let info = document.getElementById("info");
     let infoPosition = info.getBoundingClientRect().bottom - window.innerHeight;
     let infoImg = document.querySelector(".info-img")
     let anmTitle = document.querySelector(".anmTitle");
+
+    // Tool info component all selector
+    let tool = document.querySelector(".img-tool");
+    let toolInfo = document.querySelector(".tool-info");
+    let toolPosition = tool.getBoundingClientRect().bottom - window.innerHeight;
 
     window.onscroll = () => {
       top = window.pageYOffset;
@@ -117,14 +123,25 @@ export default {
       // if clint view info component
       if (infoPosition < top) {
         anm_word(true, ".anw");
-        anm_word(false, ".buble", 400)
+        anm_word(false, ".buble", 100)
         infoImg.classList.add("on");
         anmTitle.classList.add("on")
       }else {
         anm_word(false, ".anw");
-        anm_word(true, ".buble", 400);
+        anm_word(true, ".buble", 100);
         infoImg.classList.remove("on");
         anmTitle.classList.remove("on")
+      }
+
+      // if clint view tool component
+      if(toolPosition < top){
+        anm_word(false, ".tool-box")
+        tool.classList.remove("on")
+        toolInfo.classList.remove("on");
+      }else {
+        anm_word(true, ".tool-box")
+        tool.classList.add("on")
+        toolInfo.classList.add("on");
       }
     };
   },
