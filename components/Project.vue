@@ -2,13 +2,19 @@
   <div class="project-container">
     <br />
     <!-- Project title -->
-    <h3>My some porjects</h3>
-    <span>Hover on card for show details and wheel to show more project</span>
+    <h3 class="proTitle">My some porjects</h3>
+    <p class="proWord">Hover on card for show details and wheel to show more project</p>
     <br /><br />
 
     <!-- Projects card container -->
     <div ref="slide" class="project-card-container flex">
-      <div @click.right.prevent="" @wheel.prevent="slide" v-for="(obj, i) in projects" :key="i" class="card flex">
+      <div
+        @click.right.prevent=""
+        @wheel.prevent="slide"
+        v-for="(obj, i) in projects"
+        :key="i"
+        class="card flex project on"
+      >
         <!-- img -->
         <div class="img">
           <img
@@ -41,6 +47,9 @@
         </div>
       </div>
     </div>
+
+    <!-- Just for project of view -->
+    <div id="projectView"></div>
   </div>
 </template>
 <script>
@@ -84,6 +93,25 @@ export default {
   width: 90%;
   margin: 20vh auto;
 }
+
+.proWord {
+  width: 95%;
+  max-width: 400px;
+  display: inline-block;
+  overflow-wrap: break-word;
+}
+
+.project {
+  filter: blur(0px);
+  transition: all 0.4s ease;
+}
+
+.project.on {
+  filter: blur(30px);
+  transform: translateX(400px) scale(0);
+  transform-origin: right;
+}
+
 
 @media only screen and (max-width: 320px) {
   .project-container {
@@ -211,6 +239,7 @@ export default {
     transform: rotate(360deg);
   }
 }
+
 
 @keyframes rotateNg {
   0% {

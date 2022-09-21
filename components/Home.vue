@@ -117,6 +117,24 @@ export default {
     let toolInfo = document.querySelector(".tool-info");
     let toolPosition = tool.getBoundingClientRect().bottom - window.innerHeight;
 
+    // Porject component all selector
+    let projectView = document.getElementById("projectView");
+    let projectPosition = projectView.getBoundingClientRect().bottom - window.innerHeight;
+
+    // Saprate all word to element
+    // project component details
+    let proTitle = document.querySelector(".proTitle");
+    var proWord = document.querySelector(".proWord");
+    console.log(proWord)
+    var proSp = proWord.innerHTML.split(" ");
+    console.log(proSp)
+    proWord.innerHTML = "";
+    proSp.forEach((i) => {
+      proWord.innerHTML += `<span class="proWordSpl">${i}&nbsp;</span>`;
+    });
+
+
+
     window.onscroll = () => {
       top = window.pageYOffset;
 
@@ -143,6 +161,18 @@ export default {
         tool.classList.add("on")
         toolInfo.classList.add("on");
       }
+
+      // if clint view project component
+      if((projectPosition + 200) < top){
+        anm_word(false, ".project")
+        anm_word(false, ".proWordSpl");
+        proTitle.classList.remove("on");
+      }else {
+        anm_word(true, ".project")
+        anm_word(true, ".proWordSpl");
+        proTitle.classList.add("on");
+      }
+
     };
   },
   middleware: ["scroll"],

@@ -157,3 +157,21 @@ body {
   transition: all .3s ease;
   box-shadow: 3px 3px 6px #008cff;
 }
+
+.proWordSpl.on {
+  opacity: 0;
+  transform: translateY(400px);
+}
+
+.proWordSpl {
+  opacity: 1;
+  transition: all .4s ease !important;
+}
+.proTitle {
+  transition: all .4s ease;
+}
+
+.proTitle.on {
+  opacity: 0;
+  transform: translateX(-300px);
+}
