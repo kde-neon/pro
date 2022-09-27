@@ -1,6 +1,7 @@
 <template>
   <!-- Bip information app root -->
   <div class="root">
+
     <!-- bip home static slide container -->
     <div class="bip-slide">
       <!-- bip logo container -->
@@ -74,6 +75,44 @@
         <div class="bable-e"></div>
       </div>
     </div>
+
+    <!-- bip chat secure container -->
+    <div class="chat-secure flex">
+
+      <!-- chat secure box with image -->
+      <div @click.right.prevent="" class="chat-img">
+        <img class="def" title="Secure chat" src="../../asset/img/secure-chat.png" alt="bip application secure chat with privecy" >
+
+        <!-- card -->
+        <div class="card-layer"></div>
+      </div>
+
+      <!-- chat secure text area -->
+      <div class="chat-text-area">
+        <h2>Free and Secure Messaging</h2>
+        <p>BiP provides you free, secure and entertaining environment for all your communication needs such as one-to-one and group messaging, disappearing messages, location tracking, buzz and hundreds of local stickers.</p>
+      </div>
+    </div>
+
+    <!-- bip chat secure container -->
+    <div class="chat-lang flex">
+
+        <!-- chat secure box with image -->
+        <div @click.right.prevent="" class="chat-img">
+          <img class="def" title="Secure chat" src="../../asset/img/chat-lang.png" alt="bip application secure chat with privecy" >
+
+          <!-- card -->
+          <div class="card-layer"></div>
+        </div>
+
+       <!-- chat secure text area -->
+       <div class="chat-text-area">
+         <h2>Free and Secure Messaging</h2>
+         <p>BiP provides you free, secure and entertaining environment for all your communication needs such as one-to-one and group messaging, disappearing messages, location tracking, buzz and hundreds of local stickers.</p>
+       </div>
+
+    </div>
+
   </div>
 </template>
 <script>
@@ -105,8 +144,8 @@ a {
 .logo {
   width: 50px;
   height: 50px;
-  margin-top: 15px;
-  margin-left: 15px;
+  margin-top: 25px;
+  margin-left: 25px;
 }
 
 /* Slide main info flex box */
@@ -114,6 +153,7 @@ a {
   width: 95%;
   max-width: 1300px;
   margin: 0 auto;
+  margin-top: 8%;
   align-items: center;
   overflow-wrap: break-word;
   justify-content: space-between;
@@ -224,6 +264,7 @@ a {
   position: absolute;
 }
 
+/* all type of bable */
 .bable {
   width: 30px;
   height: 30px;
@@ -234,6 +275,7 @@ a {
   background: #ddd;
 }
 
+/* bable ease element */
 .b1,
 .b3 {
   top: 10px;
@@ -241,12 +283,14 @@ a {
   background: #1BC7EB;
 }
 
+/* bable ease element */
 .b2 {
   top: 15px;
   left: 90%;
   background: #431BEB;
 }
 
+/* bable ease element */
 .b3 {
   top: 35px;
   left: 80%;
@@ -255,6 +299,7 @@ a {
   background: #EB1BDD;
 }
 
+/* bable ease element */
 .b4 {
   left: 4%;
   width: 15px;
@@ -263,12 +308,122 @@ a {
   background: #8AEB1B;
 }
 
+/* bable ease element */
 .b5 {
   left: 90%;
   bottom: -90px;
   width: 25px;
   height: 25px;
   background: #EBD61B;
+}
+
+/* New section
+   New container */
+
+/* all kind of card layer */
+.card-layer {
+  width: 90%;
+  height: 90%;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 24px;
+  position: absolute;
+  bottom: 10px;
+  z-index: -9;
+  right: 125px;
+}
+
+/* chat secure container */
+.chat-secure {
+  width: 90%;
+  max-width: 900px;
+  align-items: center;
+  flex-direction: column;
+  margin: 10rem auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .chat-secure {
+    margin: 10rem 0;
+    margin-left: 30px;
+    flex-direction: row;
+  }
+}
+
+/* secure card card layer */
+.chat-secure .card-layer {
+  transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  background: #ffe5fb;
+}
+
+/* chat secure image */
+.chat-img {
+  width: 95%;
+  min-width: 200px;
+  max-width: 600px;
+  transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+}
+
+
+/* every text chat area */
+.chat-text-area {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* chat text area paragrap light dark color */
+.chat-text-area p {
+  color: #505050;
+}
+
+/* language chat container */
+.chat-lang {
+  width: 90%;
+  max-width: 900px;
+  align-items: center;
+  flex-direction: column;
+  margin: 10rem auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .chat-lang {
+    right: 30px;
+    margin: 10rem 0;
+    position: absolute;
+    flex-direction: row-reverse;
+  }
+  .chat-lang .chat-text-area {
+    text-align: right;
+  }
+}
+
+/* chat language card layer */
+.chat-lang .card-layer {
+  left: 70px;
+  transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  background: #D6FFEF;
+}
+
+/* chat language image container */
+.chat-lang .chat-img {
+  transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+}
+
+/* language chat image drop shadow */
+.chat-lang .chat-img img {
+  filter: drop-shadow(0px 0px 25px #eeeeee);
 }
 
 </style>
