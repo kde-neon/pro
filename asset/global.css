@@ -175,3 +175,8 @@ body {
   opacity: 0;
   transform: translateX(-300px);
 }
+
+.f-right {
+  width: 95%;
+  justify-content: right;
+}
