@@ -1,7 +1,6 @@
 <template>
   <!-- Bip information app root -->
   <div class="root">
-
     <!-- bip home static slide container -->
     <div class="bip-slide">
       <!-- bip logo container -->
@@ -27,27 +26,35 @@
           <div class="down-btn flex">
             <a href="https://" target="_blank" class="ico-btn flex def">
               <div @click.right.prevent="" class="ico">
-                <img class="def" src="../../asset/img/appstore.png" alt="app store bip app" >
+                <img
+                  class="def"
+                  src="../../asset/img/appstore.png"
+                  alt="app store bip app"
+                />
               </div>
-              <span>Android</span>
+              <span>iPhone</span>
             </a>
             <a href="https://" target="_blank" class="ico-btn flex def">
               <div @click.right.prevent="" class="ico">
-                <img class="def" src="../../asset/img/playstore.png" alt="google play store bip app" >
+                <img
+                  class="def"
+                  src="../../asset/img/playstore.png"
+                  alt="google play store bip app"
+                />
               </div>
-              <span>iPhone</span>
+              <span>Android</span>
             </a>
           </div>
         </div>
 
-      <!-- bip bable container -->
-      <div class="bable-container">
-        <div class="bable b1"></div>
-        <div class="bable b2"></div>
-        <div class="bable b3"></div>
-        <div class="bable b4"></div>
-        <div class="bable b5"></div>
-      </div>
+        <!-- bip bable container -->
+        <div class="bable-container">
+          <div class="bable b1"></div>
+          <div class="bable b2"></div>
+          <div class="bable b3"></div>
+          <div class="bable b4"></div>
+          <div class="bable b5"></div>
+        </div>
 
         <!-- bip app preview container -->
         <div class="bip-app-preview">
@@ -68,7 +75,6 @@
         </div>
       </div>
 
-
       <!-- slide left bable conatiner -->
       <div class="slide-left-bable">
         <div class="bable-ee"></div>
@@ -78,10 +84,14 @@
 
     <!-- bip chat secure container -->
     <div class="chat-secure flex">
-
       <!-- chat secure box with image -->
       <div @click.right.prevent="" class="chat-img">
-        <img class="def" title="Secure chat" src="../../asset/img/secure-chat.png" alt="bip application secure chat with privecy" >
+        <img
+          class="def"
+          title="Secure chat"
+          src="../../asset/img/secure-chat.png"
+          alt="bip application secure chat with privecy"
+        />
 
         <!-- card -->
         <div class="card-layer"></div>
@@ -90,29 +100,277 @@
       <!-- chat secure text area -->
       <div class="chat-text-area">
         <h2>Free and Secure Messaging</h2>
-        <p>BiP provides you free, secure and entertaining environment for all your communication needs such as one-to-one and group messaging, disappearing messages, location tracking, buzz and hundreds of local stickers.</p>
+        <p>
+          BiP provides you free, secure and entertaining environment for all your
+          communication needs such as one-to-one and group messaging, disappearing
+          messages, location tracking, buzz and hundreds of local stickers.
+        </p>
       </div>
     </div>
 
-    <!-- bip chat secure container -->
-    <div class="chat-lang flex">
-
+    <!-- chat language container cover -->
+    <div class="f-right flex">
+      <!-- bip chat secure container -->
+      <div class="chat-lang flex">
         <!-- chat secure box with image -->
         <div @click.right.prevent="" class="chat-img">
-          <img class="def" title="Secure chat" src="../../asset/img/chat-lang.png" alt="bip application secure chat with privecy" >
+          <img
+            class="def"
+            title="Secure chat"
+            src="../../asset/img/chat-lang.png"
+            alt="bip application secure chat with privecy"
+          />
 
           <!-- card -->
           <div class="card-layer"></div>
         </div>
 
-       <!-- chat secure text area -->
-       <div class="chat-text-area">
-         <h2>Free and Secure Messaging</h2>
-         <p>BiP provides you free, secure and entertaining environment for all your communication needs such as one-to-one and group messaging, disappearing messages, location tracking, buzz and hundreds of local stickers.</p>
-       </div>
-
+        <!-- chat secure text area -->
+        <div class="chat-text-area">
+          <h2>Free and Secure Messaging</h2>
+          <p>
+            BiP provides you free, secure and entertaining environment for all your
+            communication needs such as one-to-one and group messaging, disappearing
+            messages, location tracking, buzz and hundreds of local stickers.
+          </p>
+        </div>
+      </div>
     </div>
 
+    <!-- Bip feture container -->
+    <div class="bip-feture flex">
+      <!-- feture section cover left -->
+      <div class="flex bip-feture-cover bfc-left">
+        <!-- feture section -->
+        <div class="feture-section flex">
+          <!-- feture text area -->
+          <div class="feture-text-area fta-left">
+            <h2>Secure, Encrypted, Transparent</h2>
+            <p>
+              Your data is encrypted and not shared with anyone. BiP does not impose or
+              discriminate on its users in or der to obtain permission.
+            </p>
+          </div>
+
+          <!-- feture icon contianer -->
+          <div class="feture-icon">
+            <img
+              width="100%"
+              class="def"
+              src="../../asset/img/securechat.png"
+              alt="secure chat"
+              title="secure chat message"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- break div -->
+      <div class="line-break"></div>
+
+      <!-- feture section cover right -->
+      <div class="flex bip-feture-cover bfc-right">
+        <!-- feture section -->
+        <div class="feture-section fs-right flex">
+          <!-- feture text area -->
+          <div class="feture-text-area fta-right">
+            <h2>Personalization</h2>
+            <p>
+              Add the features you use the most to the main menu and have a special BiP
+              experience!
+            </p>
+          </div>
+
+          <!-- feture icon contianer -->
+          <div @click.right.prevent="" class="feture-icon">
+            <img
+              width="100%"
+              class="def"
+              src="../../asset/img/kisisellestir.png"
+              alt="secure chat"
+              title="secure chat message"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- break div -->
+      <div class="line-break"></div>
+
+      <!-- feture section cover left -->
+      <div class="flex bip-feture-cover bfc-left">
+        <!-- feture section -->
+        <div class="feture-section flex">
+          <!-- feture text area -->
+          <div class="feture-text-area fta-left">
+            <h2>Fun Stickers</h2>
+            <p>
+              The most beautiful stickers that will add color to your messages and have
+              fun as you use them are in BiP.
+            </p>
+          </div>
+
+          <!-- feture icon contianer -->
+          <div @click.right.prevent="" class="feture-icon">
+            <img
+              width="100%"
+              class="def"
+              src="../../asset/img/galeri.png"
+              alt="secure chat"
+              title="bip chat application feture"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- break div -->
+      <div class="line-break"></div>
+
+      <!-- feture section cover right -->
+      <div class="flex bip-feture-cover bfc-right">
+        <!-- feture section -->
+        <div class="feture-section fs-right flex">
+          <!-- feture text area -->
+          <div class="feture-text-area fta-right">
+            <h2>Uninterrupted Communication with BiP Web</h2>
+            <p>
+              With BiP Web, your communication will not be interrupted even if your
+              phone's battery runs out, and you can continue messaging, as well as making
+              audio and video calls.
+            </p>
+          </div>
+
+          <!-- feture icon contianer -->
+          <div @click.right.prevent="" class="feture-icon">
+            <img
+              width="100%"
+              class="def"
+              src="../../asset/img/pc.png"
+              alt="secure chat"
+              title="bip chat application feture"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- break div -->
+      <div class="line-break"></div>
+
+      <!-- feture section cover left -->
+      <div class="flex bip-feture-cover bfc-left">
+        <!-- feture section -->
+        <div class="feture-section flex">
+          <!-- feture text area -->
+          <div class="feture-text-area fta-left">
+            <h2>Share video</h2>
+            <p>
+              Share high regulation max length video on bip, easy to share and download
+              video
+            </p>
+          </div>
+
+          <!-- feture icon contianer -->
+          <div @click.right.prevent="" class="feture-icon">
+            <img
+              width="100%"
+              class="def"
+              src="../../asset/img/video.png"
+              alt="secure chat"
+              title="bip chat application feture"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- break div -->
+      <div class="line-break"></div>
+
+      <!-- feture section cover right -->
+      <div class="flex bip-feture-cover bfc-right">
+        <!-- feture section -->
+        <div class="feture-section fs-right flex">
+          <!-- feture text area -->
+          <div class="feture-text-area fta-right">
+            <h2>channels</h2>
+            <p>You can create your channel in BiP and reach large audiences.</p>
+          </div>
+
+          <!-- feture icon contianer -->
+          <div @click.right.prevent="" class="feture-icon">
+            <img
+              width="100%"
+              class="def"
+              src="../../asset/img/channel.png"
+              alt="secure chat"
+              title="bip chat application feture"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- break div -->
+      <div class="line-break"></div>
+
+      <!-- feture section cover left -->
+      <div class="flex bip-feture-cover bfc-left">
+        <!-- feture section -->
+        <div class="feture-section flex">
+          <!-- feture text area -->
+          <div class="feture-text-area fta-left">
+            <h2>Discover</h2>
+            <p>
+              With hundreds of services and channels, you can easily handle many things,
+              have fun and win gifts.
+            </p>
+          </div>
+
+          <!-- feture icon contianer -->
+          <div @click.right.prevent="" class="feture-icon">
+            <img
+              width="100%"
+              class="def"
+              src="../../asset/img/kesfet.png"
+              alt="secure chat"
+              title="bip chat application feture"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- break div -->
+      <div class="line-break"></div>
+
+      <!-- feture section cover right -->
+      <div class="flex bip-feture-cover bfc-right">
+        <!-- feture section -->
+        <div class="feture-section fs-right flex">
+          <!-- feture text area -->
+          <div class="feture-text-area fta-right">
+            <h2>Money transfer</h2>
+            <p>
+              Just like sending a message, you can send money from BiP without the need
+              for an IBAN or account number.
+            </p>
+          </div>
+
+          <!-- feture icon contianer -->
+          <div @click.right.prevent="" class="feture-icon">
+            <img
+              width="100%"
+              class="def"
+              src="../../asset/img/money.png"
+              alt="secure chat"
+              title="bip chat application feture"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <!-- Download button -->
+    <center><button class="btn">get now</button></center>
+    <br /><br /><br />
   </div>
 </template>
 <script>
@@ -124,6 +382,61 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+/* bip feture */
+.bip-feture {
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*  feture section*/
+.feture-section {
+  width: 494px;
+  align-items: center;
+}
+
+.bip-feture-cover {
+  width: 100%;
+  max-width: 894px;
+}
+
+.bfc-left {
+  justify-content: flex-start;
+}
+
+.bfc-right {
+  justify-content: flex-end;
+}
+
+.feture-icon {
+  width: 60px;
+  min-width: 60px;
+  margin: 0 20px;
+}
+
+.fta-left {
+  text-align: right;
+}
+
+.fta-right {
+  text-align: left;
+}
+
+.fs-right {
+  flex-direction: row-reverse;
+}
+
+/* bip feture break large line */
+.line-break {
+  width: 2px;
+  height: 50px;
+  margin: 10px auto;
+  border-radius: 25px;
+  background: #e5eeff;
+}
+</style>
 <style scoped>
 /* root all style for default element no class */
 img {
@@ -280,14 +593,14 @@ a {
 .b3 {
   top: 10px;
   left: 10px;
-  background: #1BC7EB;
+  background: #1bc7eb;
 }
 
 /* bable ease element */
 .b2 {
   top: 15px;
   left: 90%;
-  background: #431BEB;
+  background: #431beb;
 }
 
 /* bable ease element */
@@ -296,7 +609,7 @@ a {
   left: 80%;
   width: 20px;
   height: 20px;
-  background: #EB1BDD;
+  background: #eb1bdd;
 }
 
 /* bable ease element */
@@ -305,7 +618,7 @@ a {
   width: 15px;
   height: 15px;
   bottom: -40px;
-  background: #8AEB1B;
+  background: #8aeb1b;
 }
 
 /* bable ease element */
@@ -314,7 +627,7 @@ a {
   bottom: -90px;
   width: 25px;
   height: 25px;
-  background: #EBD61B;
+  background: #ebd61b;
 }
 
 /* New section
@@ -370,7 +683,6 @@ a {
   -webkit-transform: rotate(-5deg);
 }
 
-
 /* every text chat area */
 .chat-text-area {
   width: 100%;
@@ -393,9 +705,7 @@ a {
 
 @media only screen and (min-width: 768px) {
   .chat-lang {
-    right: 30px;
     margin: 10rem 0;
-    position: absolute;
     flex-direction: row-reverse;
   }
   .chat-lang .chat-text-area {
@@ -410,7 +720,7 @@ a {
   -o-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
   -webkit-transform: rotate(-15deg);
-  background: #D6FFEF;
+  background: #d6ffef;
 }
 
 /* chat language image container */
@@ -425,5 +735,4 @@ a {
 .chat-lang .chat-img img {
   filter: drop-shadow(0px 0px 25px #eeeeee);
 }
-
 </style>
