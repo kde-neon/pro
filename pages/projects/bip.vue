@@ -24,18 +24,18 @@
 
           <!-- bip button container -->
           <div class="down-btn flex">
-            <button class="ico-btn flex">
+            <a href="https://" target="_blank" class="ico-btn flex def">
               <div @click.right.prevent="" class="ico">
                 <img class="def" src="../../asset/img/appstore.png" alt="app store bip app" >
               </div>
               <span>Android</span>
-            </button>
-            <button class="ico-btn flex">
+            </a>
+            <a href="https://" target="_blank" class="ico-btn flex def">
               <div @click.right.prevent="" class="ico">
                 <img class="def" src="../../asset/img/playstore.png" alt="google play store bip app" >
               </div>
               <span>iPhone</span>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -91,6 +91,9 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
 
 /* bip slide container */
 .bip-slide {
