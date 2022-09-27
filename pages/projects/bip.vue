@@ -55,6 +55,15 @@
           </div>
         </div>
 
+      <!-- bip bable container -->
+      <div class="bable-container">
+        <div class="bable b1"></div>
+        <div class="bable b2"></div>
+        <div class="bable b3"></div>
+        <div class="bable b4"></div>
+        <div class="bable b5"></div>
+      </div>
+
         <!-- bip app preview container -->
         <div class="bip-app-preview">
           <!-- bip app image preview container -->
@@ -74,14 +83,6 @@
         </div>
       </div>
 
-      <!-- bip bable container -->
-      <div class="bable-container">
-        <div class="bable b1"></div>
-        <div class="bable b2"></div>
-        <div class="bable b3"></div>
-        <div class="bable b4"></div>
-        <div class="bable b5"></div>
-      </div>
 
       <!-- slide left bable conatiner -->
       <div class="slide-left-bable">
@@ -122,16 +123,26 @@ img {
 
 /* Slide main info flex box */
 .maininf {
-  width: 90%;
-  flex-direction: column;
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
   align-items: center;
+  overflow-wrap: break-word;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .maininf {
+    width: 95%;
+    flex-direction: column-reverse;
+  }
 }
 
 /* bip main info container */
 .bip-info-main {
-  margin-top: 25px;
-  margin-left: 18px;
+  width: 100%;
+  z-index: 9;
+  position: relative;
   max-width: 500px;
 }
 
@@ -139,6 +150,12 @@ img {
 .bip-info-main p {
   color: #505050;
   line-height: normal;
+}
+
+/* bip main info text container */
+.bip-min-text {
+  margin-left: 15px;
+  text-align: left;
 }
 
 /* download button container */
@@ -166,8 +183,7 @@ img {
 /* bip app preview container */
 .bip-app-preview {
   width: 100%;
-  max-width: 500px;
-  height: 400px;
+  max-width: 600px;
   position: relative;
 }
 
@@ -190,13 +206,72 @@ img {
 .r2 {
   top: 10%;
   right: 10%;
+  transform: rotate(-20deg);
   background: #c5ffe2;
 }
 
 /* controll card-bg class 1 */
 .r1 {
-  left: 4%;
-  bottom: 4%;
+  left: 5%;
+  bottom: 19%;
+  transform: rotate(20deg);
   background: #c7e4ff;
 }
+
+/* slide bable container */
+.bable-container {
+  width: 95%;
+  height: 90%;
+  max-width: 500px;
+  max-height: 300px;
+  position: absolute;
+}
+
+.bable {
+  width: 30px;
+  height: 30px;
+  z-index: -9;
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.b1,
+.b3 {
+  top: 10px;
+  left: 10px;
+  background: #1BC7EB;
+}
+
+.b2 {
+  top: 15px;
+  left: 90%;
+  background: #431BEB;
+}
+
+.b3 {
+  top: 35px;
+  left: 80%;
+  width: 20px;
+  height: 20px;
+  background: #EB1BDD;
+}
+
+.b4 {
+  left: 4%;
+  width: 15px;
+  height: 15px;
+  bottom: -40px;
+  background: #8AEB1B;
+}
+
+.b5 {
+  left: 90%;
+  bottom: -90px;
+  width: 25px;
+  height: 25px;
+  background: #EBD61B;
+}
+
 </style>
