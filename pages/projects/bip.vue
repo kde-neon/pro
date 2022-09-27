@@ -92,6 +92,7 @@ img {
 }
 
 a {
+  color: #000;
   text-decoration: none;
 }
 
@@ -152,9 +153,15 @@ a {
   align-items: center;
 }
 
+/* download button container span text area */
+.down-btn span {
+  color: #003b03;
+}
+
 /* download button with icon */
 .ico-btn {
-  width: 150px;
+  width: 110px;
+  max-width: 110px;
   margin: 0 10px;
   padding: 10px 25px;
   border-radius: 8px;
