@@ -373,11 +373,78 @@
       <!-- Download button -->
       <br /><br />
       <br /><br /><br />
-      <button class="btn">get now</button>
+      <button @click="getDownload(true)" class="btn">get now</button>
     </div>
 
-    <!-- Download oppup bip -->
+    <transition name="down">
+      <!-- Download oppup bip -->
+      <div v-show="getdown" class="download-container">
+        <!-- Download titile contianer -->
+        <div class="title">
+          <h2>Download</h2>
+        </div>
 
+        <!-- all download container -->
+        <!-- bip button container -->
+        <div class="down-btn get-more-down flex">
+          <!-- Ios download -->
+          <a href="https://" target="_blank" class="ico-btn flex def">
+            <div @click.right.prevent="" class="ico">
+              <img
+                class="def"
+                src="../../asset/img/appstore.png"
+                alt="app store bip app"
+              />
+            </div>
+            <span>iPhone</span>
+          </a>
+
+          <!-- Android download -->
+          <a href="https://" target="_blank" class="ico-btn flex def">
+            <div @click.right.prevent="" class="ico">
+              <img
+                class="def"
+                src="../../asset/img/playstore.png"
+                alt="google play store bip app"
+              />
+            </div>
+            <span>Android</span>
+          </a>
+
+          <!-- Mac OS download -->
+          <a href="https://" target="_blank" class="ico-btn flex def">
+            <div @click.right.prevent="" class="ico">
+              <img
+                class="def"
+                src="../../asset/img/playstore.png"
+                alt="google play store bip app"
+              />
+            </div>
+            <span>MacOS</span>
+          </a>
+
+          <!-- Windows download -->
+          <a href="https://" target="_blank" class="ico-btn flex def">
+            <div @click.right.prevent="" class="ico">
+              <img
+                class="def"
+                src="../../asset/img/playstore.png"
+                alt="google play store bip app"
+              />
+            </div>
+            <span>Windows</span>
+          </a>
+        </div>
+
+        <!-- close download bottom button -->
+        <div class="bottom-area flex">
+          <button @click="getDownload(false)" class="btn">Close</button>
+        </div>
+      </div>
+    </transition>
+
+    <!-- shadow -->
+    <div class="shadow" v-if="shadow"></div>
   </div>
 </template>
 <script>
@@ -385,14 +452,18 @@ export default {
   data() {
     return {
       name: "Bip chat app",
+      shadow: false,
+      getdown: false,
     };
+  },
+  methods: {
+    getDownload(a) {
+      this.shadow = a;
+      this.getdown = a;
+    },
   },
 };
 </script>
-
-<style scoped>
-
-</style>
 <style scoped>
 /* root all style for default element no class */
 img {
@@ -402,6 +473,17 @@ img {
 a {
   color: #000;
   text-decoration: none;
+}
+
+.shadow {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  background: #0000003f;
+  backdrop-filter: blur(5px);
 }
 
 /* bip slide container */
@@ -512,7 +594,10 @@ a {
 .r2 {
   top: 10%;
   right: 10%;
-  transform: rotate(-20deg);
+  transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
   background: #c5ffe2;
 }
 
@@ -521,6 +606,9 @@ a {
   left: 5%;
   bottom: 19%;
   transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
   background: #c7e4ff;
 }
 
@@ -690,6 +778,9 @@ a {
 /* language chat image drop shadow */
 .chat-lang .chat-img img {
   filter: drop-shadow(0px 0px 25px #eeeeee);
+  -o-filter: drop-shadow(0px 0px 25px #eeeeee);
+  -moz-filter: drop-shadow(0px 0px 25px #eeeeee);
+  -webkit-filter: drop-shadow(0px 0px 25px #eeeeee);
 }
 
 /* Bip feture container
@@ -753,5 +844,103 @@ a {
   margin: 10px auto;
   border-radius: 25px;
   background: #e5eeff;
+}
+
+/* download app box container */
+.download-container {
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  padding: 35px;
+  position: fixed;
+  max-width: 500px;
+  z-index: 9999999;
+  border-radius: 8px;
+  background: #ffffff;
+  transform: translate(-50%, -50%) scale(1) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  -o-transform: translate(-50%, -50%) scale(1) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  -moz-transform: translate(-50%, -50%) scale(1) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  -webkit-transform: translate(-50%, -50%) scale(1) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+
+/* responsive for small device download box contaienr */
+@media only screen and (max-width: 600px) {
+  .download-container {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 1px;
+  }
+  .bottom-area {
+    bottom: 0%;
+    margin: 10px;
+    margin-left: -30px;
+    position: absolute;
+  }
+}
+
+/* get more download contianer box all download button */
+.get-more-down {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* get more download button link */
+.get-more-down a {
+  margin: 10px 10px;
+}
+
+/* bottom area container */
+.bottom-area {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+
+/* ✨🎉
+Download container animation */
+.down-enter-active {
+  filter: blur(10px);
+  -o-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -webkit-filter: blur(10px);
+  transform-origin: top;
+  -o-transform-origin: top;
+  -moz-transform-origin: top;
+  -webkit-transform-origin: top;
+  transition: all .4s cubic-bezier(0.004, 0.2, 0.515, 1.2);
+  -o-transition: all .4s cubic-bezier(0.004, 0.2, 0.515, 1.2);
+  -moz-transition: all .4s cubic-bezier(0.004, 0.2, 0.515, 1.2);
+  -webkit-transition: all .4s cubic-bezier(0.004, 0.2, 0.515, 1.2);
+  transform: translate(-367%, -50%) scale(1) matrix3d(1, 0, 0, 0, -8, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1) !important;
+  -o-transform: translate(-367%, -50%) scale(1) matrix3d(1, 0, 0, 0, -8, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1) !important;
+  -moz-transform: translate(-367%, -50%) scale(1) matrix3d(1, 0, 0, 0, -8, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1) !important;
+  -webkit-transform: translate(-367%, -50%) scale(1) matrix3d(1, 0, 0, 0, -8, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1) !important;
+}
+
+.down-enter-from {
+  transform-origin: top;
+  -o-transform-origin: top;
+  -moz-transform-origin: top;
+  -webkit-transform-origin: top;
+  transform: translate(-137%, -50%) scale(1) matrix3d(1, 0, 0, 0, -5, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1) !important;
+}
+
+.down-enter-to {
+  filter: blur(0px);
+  -o-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -webkit-filter: blur(0px);
+  transform-origin: top;
+  -o-transform-origin: top;
+  -moz-transform-origin: top;
+  -webkit-transform-origin: top;
+  transform: translate(-20%, -50%) scale(1) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1) !important;
+  -o-transform: translate(-20%, -50%) scale(1) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1) !important;
+  -moz-transform: translate(-20%, -50%) scale(1) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1) !important;
+  -webkit-transform: translate(-20%, -50%) scale(1) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1) !important;
 }
 </style>
