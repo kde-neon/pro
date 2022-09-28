@@ -139,6 +139,10 @@
 
     <!-- Bip feture container -->
     <div class="bip-feture flex">
+      <h2>Bip feture</h2>
+      <span>some wassam feture of bip</span>
+      <br /><br />
+
       <!-- feture section cover left -->
       <div class="flex bip-feture-cover bfc-left">
         <!-- feture section -->
@@ -365,12 +369,15 @@
           </div>
         </div>
       </div>
+
+      <!-- Download button -->
+      <br /><br />
+      <br /><br /><br />
+      <button class="btn">get now</button>
     </div>
 
-    <br /><br />
-    <!-- Download button -->
-    <center><button class="btn">get now</button></center>
-    <br /><br /><br />
+    <!-- Download oppup bip -->
+
   </div>
 </template>
 <script>
@@ -384,58 +391,7 @@ export default {
 </script>
 
 <style scoped>
-/* bip feture */
-.bip-feture {
-  margin: 0 auto;
-  align-items: center;
-  flex-direction: column;
-}
 
-/*  feture section*/
-.feture-section {
-  width: 494px;
-  align-items: center;
-}
-
-.bip-feture-cover {
-  width: 100%;
-  max-width: 894px;
-}
-
-.bfc-left {
-  justify-content: flex-start;
-}
-
-.bfc-right {
-  justify-content: flex-end;
-}
-
-.feture-icon {
-  width: 60px;
-  min-width: 60px;
-  margin: 0 20px;
-}
-
-.fta-left {
-  text-align: right;
-}
-
-.fta-right {
-  text-align: left;
-}
-
-.fs-right {
-  flex-direction: row-reverse;
-}
-
-/* bip feture break large line */
-.line-break {
-  width: 2px;
-  height: 50px;
-  margin: 10px auto;
-  border-radius: 25px;
-  background: #e5eeff;
-}
 </style>
 <style scoped>
 /* root all style for default element no class */
@@ -734,5 +690,68 @@ a {
 /* language chat image drop shadow */
 .chat-lang .chat-img img {
   filter: drop-shadow(0px 0px 25px #eeeeee);
+}
+
+/* Bip feture container
+✨ --> bip center feture intro */
+
+/* bip feture */
+.bip-feture {
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*  feture section*/
+.feture-section {
+  width: 494px;
+  align-items: center;
+}
+
+/* bip feture cover */
+.bip-feture-cover {
+  width: 100%;
+  max-width: 894px;
+}
+
+/* bip feture cover left side */
+.bfc-left {
+  justify-content: flex-start;
+}
+
+/* bip feture cover right side */
+.bfc-right {
+  justify-content: flex-end;
+}
+
+/* bip feture icon container */
+.feture-icon {
+  width: 60px;
+  min-width: 60px;
+  margin: 0 20px;
+}
+
+/* bip text area left side */
+.fta-left {
+  text-align: right;
+}
+
+/* bip text area right side */
+.fta-right {
+  text-align: left;
+}
+
+/* bip feture section right */
+.fs-right {
+  flex-direction: row-reverse;
+}
+
+/* bip feture break large line */
+.line-break {
+  width: 2px;
+  height: 50px;
+  margin: 10px auto;
+  border-radius: 25px;
+  background: #e5eeff;
 }
 </style>
