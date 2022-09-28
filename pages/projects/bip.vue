@@ -449,15 +449,30 @@
     <!-- shadow -->
     <div class="shadow" v-if="shadow"></div>
 
-    <!-- done -->
+    <!-- break line for -->
     <br /><br /><br />
-    <h4>
-      A Leading Communication and Life Platform BiP, rewarded as "Most Innovative
-      Application"!
-    </h4>
     <br /><br /><br />
+
+    <!-- global mobile award container -->
+    <div class="award-contianer">
+
+      <!-- Blur background layer -->
+      <div class="blur-bg"></div>
+
+      <!-- award image container -->
+      <div class="award-img">
+        <img width="100%" class="def" src="../../asset/img/global-mobile-awards.png" alt="global mobile awards" >
+      </div>
+    </div>
+
+    <h4 class="title-center">A Leading Communication and Life Platform BiP, rewarded as "Most Innovative
+    Application"!</h4>
+
   </div>
 </template>
+<style scoped>
+
+</style>
 <script>
 export default {
   data() {
@@ -973,5 +988,47 @@ Download container animation */
     matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1) !important;
   -webkit-transform: translate(-20%, -50%) scale(1)
     matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1) !important;
+}
+
+/* ✨ Global award style section */
+/* global award container */
+.award-contianer {
+  width: 90%;
+  height: 150px;
+  margin: 0 auto;
+  max-width: 500px;
+  border-radius: 8px;
+  background: url(../../asset/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.466);
+}
+
+/* global award image container */
+.award-img {
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* background blur layer */
+.blur-bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backdrop-filter: blur(1px);
+}
+
+/* title center */
+.title-center {
+  max-width: 350px;
+  margin: 2rem auto;
+  text-align: center;
 }
 </style>
