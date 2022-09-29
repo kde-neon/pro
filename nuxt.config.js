@@ -8,7 +8,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'marcketplace, upwork, freelanser, web app, best UI, Best ui agency, Top web app, Secure chating application, Bip caht app, Bip android app, bip ios app' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
