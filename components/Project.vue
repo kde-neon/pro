@@ -61,7 +61,7 @@ export default {
         {
           name: "Chat Bot",
           details: "small chat bot for web app",
-          to: "/about",
+          to: "/projects/bip",
           img: "project-i.jpg",
         },
         {

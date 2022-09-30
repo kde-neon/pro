@@ -3,18 +3,44 @@
   <div class="root">
     <!-- bip home static slide container -->
     <div class="bip-slide">
-      <!-- bip logo container -->
-      <div class="logo">
-        <img class="def" src="../../asset/img/bip-logo.png" alt="bip app logo ⨉ icon" />
-      </div>
-
       <!-- Main information flex box -->
       <div class="flex maininf">
+        <!-- bip logo container -->
+        <div class="logo">
+          <img class="def" src="../../asset/img/bip-logo.png" alt="bip app logo ⨉ icon" />
+        </div>
+
         <!-- bip app main info container -->
         <div class="bip-info-main">
           <!-- bip main info text container -->
           <div class="bip-min-text">
-            <h2>HD Quality Calls on BiP!</h2>
+            <h2>
+              HD <span class="layer-text">Quality</span>
+              <div class="layer">
+                <svg viewBox="0 0 275.3 54.3">
+                  <g data-name="Layer 2">
+                    <g data-name="Layer 1" fill="#20c6ec">
+                      <path
+                        d="M274.5 41.1c.5-.5 1.1-1.8.6-1.7l-1.5 2ZM274.1 35.7a12.3 12.3 0 0 0-3.2 4.6c1.5-1.9 1.2-.9 3-3.2.5 0 .3 1.1-.2 1.8s.3.8 1.2-.4-.2-2.4-1.5-1.3a5.2 5.2 0 0 1 .7-1.5ZM234.4 18.3l.2.3c-.1-.1-.1-.3-.2-.3ZM208.5 11.2a.7.7 0 0 0 .4-.5c-.2.1-.4.2-.4.5ZM204.5 7.5l.3.3q-.2-.4-.3-.3ZM234.4 18.3l-.5-.9c-.3.7.2.6.5.9ZM266.4 38.6l.6-.5h-.5ZM246.4 19.2h.2l.5-.9ZM255.4 21.5c-.1-.2-.8 1.8-1.2 2.7a3.2 3.2 0 0 1 .9-1.3c.1-.4.2-.8.3-1.4ZM268 30ZM240.2 17.2c0-.3.1-.6.1-.8a2.2 2.2 0 0 0-.1.8ZM10.7 35.5a.8.8 0 0 1 .1.4c0-.2 0-.4-.1-.4ZM23.6 44h-.2a3.7 3.7 0 0 1-.1 1.1ZM196.6 3.4h.1c.2-.2.1-.2-.1 0ZM117.4 2.9c1.1 1.7-1.1 2.6.5 4.4-.2-.8.8-3.4-.5-4.4ZM266.3 38.2h-.4c.2 0 .3.1.4 0ZM117.9 7.3l.2.2ZM176.9 1.7a2.2 2.2 0 0 0 .1.9 3.9 3.9 0 0 0-.1-.9ZM191 6.7l-.3-.4ZM169 3.9c-.2-.2-.3-.5-.6-.2s.1.1.1.2.3-.4.5 0ZM161 3.4l.2.4h.2ZM18.8 48.7a8.6 8.6 0 0 1-1-1.6c.6 1.3-.2 2.2 1 1.6Z"
+                      />
+                      <path
+                        d="M266.8 37.5c-.2.5-.4.7-.5.7h.2a1.3 1.3 0 0 0 .3-.7ZM167.3 20.3l-1.2-.5a2.2 2.2 0 0 0 1.2.5ZM69.4 30.4l-.2.3c.1.1.2 0 .2-.3ZM162.6 19.9a2.3 2.3 0 0 0-.6-1.4 4.3 4.3 0 0 0-.1.5ZM17.7 47.1Z"
+                      />
+                      <path
+                        d="M13.5 54.3c.5-.2-1-2.5-1.6-4s1.3 1.7 2.2 2.8c.2-.9-.3-3.5.3-3.6a2.8 2.8 0 0 1 .5 1.1c0-2.4 2.5-1.2 2.5-4.1l.3.6-1.6-3.4c.5-.3.3-2 1.2-.4-.4 0-.1.7 0 1.3l.2-.9c1.4 2.1-.4 1.1.4 2.8.6-1.2 1-3.6 2-3.3 1.1 2.3-1.4 1.6.4 3.2l-1.5-.4c2.4 3.3-.8.1 1.6 3.6 1.9.1 1.3-1.9 3.1-1.8-.2-1.5-.9-1.9-1.1-3.3 1.2-3.3 4.2 5.1 4.5 1.3-.3-1.7-1.3-4.7.5-3.6l.7 2.8c1.6-.4-.8-4.2 1.5-3.1.2 1.2-.8 1.4-.4 1.6 1.9 1.7.1-1.8.9-2.1l1.1 2.3c1.4-1.1 2.4-3.5 4-4.6a3.9 3.9 0 0 0 .9 2.2c1.7-2.1 4.8-1.6 7.5-1v-2.4c.2 0 .7.8.6 1.3s-.4-1.3-.3-2.3 1 1 1 1.7c.8-2.3 2.8-5.3 5.1-3.6v.7c1.5.4-.1-4.7 1.7-3.2v.5c2.9 0 5.2-2.8 8.1-.2-.5-3.1 2.9.6 2-3.6 2 1.7 1.8 2.5 4.2 3.5.6 0 .2-2.9.8-3.5l.5 2.2.4-2.5 1.1 2.6.6-.8c-.3 0-.8-.8-.9-1.5s3 1 3.3 2.1l2.2-2.4a3.6 3.6 0 0 1-.5 1.9c.9-2.5.8 2.3 1.6 0a6.2 6.2 0 0 1-.3-1.8 2.2 2.2 0 0 0 3.3.1l.2 1.6c2-.1 3.8-1.7 6-2.1-.9-.6-1.4-3.3-.8-3.7l.8 2.3c.1-1.5-.9-.7-.4-2.7.8.1 1.1 2.6.8 3.4l.8-1a11.2 11.2 0 0 1 .2 2c.1-1.5 2.2 2 2.2-.7l.2.7c2.2-.4 2.9-1.5 4.7-2-.5-2 .3-1.7.4-3.5 1.5.4 3.2 1.7 4.7 1.1s-.1-1.8.1-3.1c.5 1.9 2 1.4 1.5 2.9a10 10 0 0 0 4.2-2.9c-.4-.7-.7-1-.7-1.7s1.1.6 1.2 1.5v.2c1-1.6 2.7-.6 4.4.4s3.2 1.8 3.8-.4v.2l1.7-2.4c1 .1-.3 1.5.6 2.5 1.7-3.5 3.7-.1 5.2-2.5 1.1 2.7 2.4 2.4 3.7 1.8s2.6-1.3 3.8.4l-.3-1.3c.4-1.3.7.7 1.1.9s-.7-1.1-.4-1.8a8.9 8.9 0 0 1 3.2-.8l3.4.6 3.4 1.2 3.3 1c1.6.3.7-6.8 2.8-3.8l-.5 2.5a6 6 0 0 1 4.9-1.5c1.7.1 3.3.3 4.9-1-.2.6-.2 1.3-.5 1.3.6 1.8 2.5.1 2.5-1.3.5.2.1 1.3.4 2.1s1.7-2.3 2-.5-.2.6-.3.7 2 .4 1.7-1.7c1.2 1 2.4-.8 3.2.5.8-2.3 2 1.2 2.4-2-.3 3.3 1.9 2.7 2.8 1.3-.3 1 .6 1.1.2 2.5s1.7-.5 1.7-2.3c1.2 4.2 3.6-2.9 3.9 2.4a28.7 28.7 0 0 1 4-1.9 19.5 19.5 0 0 1 3.8-1c-.5 3.3-2.6-.1-3 3.4 2.4-1 4.1-3.7 6.1-2.6s-.5 1.4-.8 1.9c2.5-1 4.3.9 6.5-.5a1.6 1.6 0 0 1-.6.8c.4 0 .9.6 1.1-.9l-.5.4c-.3-2.3 2.3-4.3 2.6-5.5-1.4 4.2 1.8 1.5-.2 6.7a2.8 2.8 0 0 0 .8-1.9c.4.4.4 1-.2 2.1 1.5-.6 1.3-2.3 2.6-2s-.5.9-.8 1.8c.9-1.3 1.8-2.6 2.8-1.8s-.1 1-.5.9c1.9.1 3.9-3.2 5.6-1.4-1.2 3 .5 1.2.1 3.9l1.2-.6-.2-1.4c1 .2 2.2-1.6 2.8-.5l-.9 1 1.9-.2-.8-1.2c1.2-1.2.6-3.5 1.7-2.4s1 .2 1.1 1.9c.7-.8 1.3-1.6 1.9-.7s-.8 2.9-.8 3.5c.9-2.1 2.3-.1 3.5-2.4a5.5 5.5 0 0 0-.7 2.2l.8-1.7a2.5 2.5 0 0 1 0 2.1c1.2.6.3-3.6 1.6-1.7-.2.1-.2.4-.5.6 1.4 1.1 3.3-.5 4.6.8s-1.4.3-1.5 2.8c2.2-.1 5.1-2.3 7-1.2l-.3-.4c1.1-3.8 1.1 2.2 2.5.6a9.8 9.8 0 0 0-.7 1.7c1.3.9 3.1-.3 5.4-1.1l-.4 1c.6 1 2 1 2.7 1.6.5-.9 1-.6 1-2.1 1.3 6.2 5.9-1.7 7.1 3.5-.3 0-.9.7-.7.8l2.3-.4a6.7 6.7 0 0 0-.1-2.5c.5-.9 1.3-1.5 1.8-1.4-1.2.9-.7 2.7-.6 3.7s.4-1 .5-1.5c.2 3.2 1.1-3.3 2-.9l-.4.8c.7-.3 1.5-1.3 2-.9-.3 2-.8.8-1.3 2.3s2.7-3.1 2.9-1c-.5.4-1 .3-1.5.7.1 2.5.4 1.9.8 2.5l1 1.4v-.7c2.5-4.6 2.3-.3 4.7-3-2.3 2.6-.8 1.7-1.6 3.8s.4 1.5.1 2.1c1.2-1.5.5 1.7 2.3-.6-.2.7.6.3-.1 2 .9-.2.2-1.2.6-2.1s1.5.1 2 .9 1.3 1.7 2.8.5 3.2-2.9 5.1-3.3c0 1.2-1.4 2.2-1.4 2.2s1 1.4 2 1a3.3 3.3 0 0 0-.5 1.9c.6 0 1.4-2.3 1.7-1a13.1 13.1 0 0 1-1.7 2.4c.9-.3 2.1-1.2 3.1-1.5-.4 1.3-1.2 1.6-1.8 2.2a4.3 4.3 0 0 0 3.6-1.7l-.2-.9c.3 0-.6 1.6-1 1.8s-.6-1.1-.4-1.7l.7-.2c1.3-4.1-2.3-.4-3.2-1l1.7-2.7-2.1 1.9c.1-.8.7-2.5 1.4-2.7-.2-1.7-1.1.7-1.1-1.1s.1-.4.3-.5l-1.1.5c.4-.5.7-2 1-1.4-.7-2.2-3.1 1.3-2.7-1.1l.2-.2c-2.3.3-1 2.1-3.4 4l1.1-5.6-1 2.1c-.2-.2-.5-.5-.1-1.3-1.3 1.2-.2 1-1.1 2.2-.3-2.3-2.9 0-1.9-3.5-.9 1.5.4 1.6-1 2.4 1-3.8-1.3.2-1.6-1.8s1.4-.5 1.1-2.5c-1.6 3.1-1.5-1.3-2.4-.9-.9 2.6-2 .6-3.4 1.1.3-.9-1.9-2.1-2.8-3.4v-.4c-.9 2.5-2 1.7-3 2a5.2 5.2 0 0 1 1.5-2.7l-.9-.2c-.4.8-.7 1.2-1.4 1.3l.8-1.9c-1.1-.2-2.8 1.8-3.9.1-.5 1.8-.2 5.4-2 6.3.2-1.1.6-2.8 1.1-3.1s-.7.7-.8.2l1-1.5c-.4-.9-.7 1.3-1.1 1s-.2-1.1.2-2.2.3.7.6.2a3 3 0 0 1-.9-2.5c-.2.8-.5 1.9-1 2s.1-1.8-.4-2.7c-.5.9-.9-.3-1.5 1.8-.3-.1-.1-1.1-.1-1.7s-2.7-.3-2.6 2.1v.2h-.1c-2.3 1.7-3.5-2.1-5.5-1.6v-.7c-1.3.6-2.5 0-3.6 1.3s-.5-1.4-.2-2.3-1.2 1.2-2.1-.3c1.1-1-.1-1.1 1-.7-.9-.9-.9-2.1-2.5-.4.8-1.7-.3-2.5-.9-2l.4 1.5a2.4 2.4 0 0 1-1.5-.4l.8-2.4c-1.5-3.4-5.1 4.1-5.7-1.2-1 1.6 1 1.5 0 3.3-1-.5-1.3-4.2-1.6-4.3s-2.1 3.3-3.4 2.1c.1.9-.3 3.2-1.5 3.8s-.5-3.9.3-4.5.3.3.2.6a1.2 1.2 0 0 0 .7-1.5l-.3.8c-.3-1-1.8-1.2-1.1-2.6-1 .7-.7 1.4-.2 2-1-1.6-2-.5-3.2-1.6.1.5.1 1.5-.1 1.5-1.8-1.5-1.2 1.4-2.7 1.5-.5-1.4.9-3.1-.7-2.2-.6-1 .3-2.3.8-3-1.6 1.5-2.2-1.5-2.8-1.9l.8-.6a1.4 1.4 0 0 1-1.2.2v1.7c-.3-.4-.7-.4-.5-1.2-.6 1.1-.3 3-1.3 4.4-.4-1-1.8.7-1.5-1.7 1.5 1.1.2-2.3 1.6-2.4q-.5.3-.9-.3c-.1-.2.1-.4.2-.5-1.2-2.4-1.1 2.4-2.8 2.1.5-1.3.1-2.5-.2-2.3s-.1 2.2-.8 3.1c-.9-1.2-1.3.6-1.8.4l.5.5c-.4 1.3-.9 1-1.7 1.3s.8-.6.6-1.1c-1.1 2.2-1.4-2.6-2.8-1.2-.4-1 .3-2.5 0-3.1-1.6 1.5-1.2-2-2.7-.8.1 1.8.3 1.4-.9 3l2.4-1-1.8 2.4c.6.1 1.5-.9 1.9-.6s-.8 1-.7 2.5c-.5-2.8-1.9 1.2-2.7-.7l.6-4.3c-1.3-2.2-3.1 1.8-5 .4l.6.9c-.5 1.7-1.3 0-2 .7a8.6 8.6 0 0 0-.3-3c-.1 1.1-1.5-.2-2 2.7l-.7-2c-1.6-1-2.3 3.9-3.9 3.3.7-1.6 0-2.7 1.2-3.7-.5-.1-1-.4-1.1.6-.2-.9-1.6 1.9-2 .4-.3.6-.5 2.2-1 2a1.5 1.5 0 0 1 0-.7c0 .7-1 .9-.6 2.5-1.3-4.6-4.5.1-5.7-3.9a18.1 18.1 0 0 1-3.7.9c.1-.5 0-.8.2-.6-1.4-1.4-1 4.2-2.6 2.6s.9-1.3.4-2.2c-.1-4.8-2 .7-3.1-2.2l.3-.2c-.8-1.7-2.1 1.8-3.5 1.4a1.5 1.5 0 0 0 0-.7 5.9 5.9 0 0 1-1.9 2.6 19.1 19.1 0 0 1-2.1 1.4c.4-1.9.6-1 .3-2.9-.6.2.2 3-1 3.6a10.7 10.7 0 0 1-1.4-3.9l1.1-.2c-.7-2.6-1.5.2-2.1-.3V2c-1.8.4-1.7 3.3-3.5 3.2l.2.8c-.8 3-.9-1.5-1.8.7l-.5-2.9c-.6.7-2.2 3-3.3 3.6.5-2.2 1.8-3.4 2.6-4.8-.7.1-2.3.4-2.5 1.9.3-.3.5-1.1.8-.6-.6 2.3-1.6 3.5-2.9 3.6-.1-2.8-1-3.2-2-3.2s-2.2 0-3-2.2c-2.1 2.4-4.8-.4-7.5.4 1.6 4.3-.8.3.1 4.8-.6.3-.9.3-1 0l-2.3-2.4c-.6-1.2.5-1 .2-2S115 1 113.8 0c.5 1.6-.1 2.4-1 1.9l1.5 1.9c-1.6 2.7-2.3-3.5-3.9-.8l.4-1.5c-.9 1-3.7.7-4 4.4-.3-.5-.8-1.6-.4-2-2.5-.2-4.5 4.8-6.7 3V5.8c-.4.4-.3 2.2-1.1 1.2s-.1-1.1-.3-1.1-.8 2.1-1.5 1.6l.2-1.3c-2.6-.9-2.8 3.7-4.6 4.9a5.1 5.1 0 0 0-3.7-4.2v-.4c-2.7.2-3.8 3.6-5.9 5.4-2.3-3.1-5.4-.3-8.2-1.7a3.3 3.3 0 0 1 .1 2.9c-.7-.5-1 2.6-1.6-.3h.2c-1-2.8-2-1.8-2.9-1.7L71 15c-3.6-5.1-5.7 3.3-8.3-1.3-.4 1.1-1.1 1.2-1.5 2.3l-.5-2a6.5 6.5 0 0 0-4.6.9v-1.6c-1.2.2.1 6.3-.9 6.7L54 17c-1.9.7-4.8-1.3-5.8 2-.2-.4-.4-1.3-.1-1.5s-4.3-.8-2.5 3.1c-1-2.6-2.1.4-2.7 2l-.6-2c.1 2.8.3 3.5-.7 4.6s-.8-1.5-.2-1.1c-1.4-.7-.1 2.1-1.6 1.5v-1.4c-1 .2-.7.9-.7 2.5s-2 .2-2.8-1.5c.3 1.1.3 2.8-.5 2.5a2.6 2.6 0 0 1-.2-1.4c-2.2-.6-1.5 3.2-3.4 1.8a7.4 7.4 0 0 0-.6-1.1c1.3-.5 2.3-.8 2.3-.6-.7-1.8-1.9-1.7-2-4.4-.3 1.6-.6 5.1-1.9 4.7l-.4-.6v-.2c-.3-.1-.4.1-.5.5s-.7-.3-1-.2-1.5-.3-2.1-.1c.8 1.9.1 1.8 1.3 3.2-.1-.1 0-.3.3-.5s.2-.2.2-.3v.2L29 28c0 1.2-.1 2.2-1.1 1.3.3 1.4.5 2.8.6 3.4-1.8-2.4-3.7-3.3-4.6-4.8-1.1 1.7-3.4 2.2-2.8 6.2-.3.7-1-.8-1.4-1.3s.5-.5.4-1.1c-.5 1.3-2.5 1.4-1.6 4-1.6-.6-.4-2.5-1.7-1.5v-.8c-4.7-2.8-2.1 8.4-7.7 4.6a1.4 1.4 0 0 1 .8.7c-2.4-.3-4.6 1.3-6.6 3.4l-1.6 1.6-.7.8-.2.3a1 1 0 0 0-.3.6.5.5 0 0 0-.2.4H.2v.2a.9.9 0 0 0-.1.5.7.7 0 0 0-.1.5v.6a8.8 8.8 0 0 0 .5 1.5 4.4 4.4 0 0 0 .9 1.1l.8.5.6.3h4a7 7 0 0 1 1.9.6c1.4.5 1-1.3 1.4-2.7l.8 2.1.5-2.9c1.1-2.3 4.3 4.5 5.3.5l-.7-1c.8.1 2.1-1.5 2.4.3 0-.3-.2-1.6.3-.9l.3 1.1a17.1 17.1 0 0 1 1.3-2.3c.7.3.8 1.5 1 2.5s.2 1.1.3 1.5a2.5 2.5 0 0 0 .5.7l.6-2a7.1 7.1 0 0 0 .6-2 3.4 3.4 0 0 1-.5-2.1l.6-.4c.3-1.6.6-3.4.8-5a5.3 5.3 0 0 0-1.6-4.7l-1 1.1a5 5 0 0 0-1 1.1 11.9 11.9 0 0 1-.8-1.6l1.8-.2c-1.3-1.6-1.8-.1-2.2 1a3.7 3.7 0 0 0-1.1-1.8c-.3 1.2-.6 2.4-.8 3.6-.5-1.3.1-2.8-1.1-3.3-.3 1.6 1.3 2.8.5 4-1.1-1.3-1.2-2.6-1.6-1.1a2.5 2.5 0 0 1-.1-1.9c-.4 1.2-1.7.9-1.5 2.8-1.2-1.7-2 1-2.9-2.1.1.8-.3 2.8-.9 3.1-.1-4.1-2.1.4-3-3.8.3 3.6-2.2 2.3-2.7 4.5 0-.3 0-.9.1-.8a.8.8 0 0 1-.7-.7c-.2-.1-.2-.3-.3-.5s-.1-.2-.1-.3v.2l.2 1.2.2 1.1c.1.6.2 1.2.3 2l.3 2.3v2.1c0 .1-.1.3-.1.4v.3l-.2.3h.5l.3.2H5l3.7 3h-.1l-.2-.2-.4-.4a13.9 13.9 0 0 1 2.4 2 7.6 7.6 0 0 0 .9.9l.3.3h.1l-.2-.2-.6-.6a7.6 7.6 0 0 0-1.3-1.6l1.1.9 1.3 1.5c-1.1-1.4-1.2-1.6-1.1-1.6s.3 0-.2-1c1.5 1.2 1.9 2.8 1.9 1.6a3.1 3.1 0 0 1 .7 1.4ZM35 38.5l-.5.3Zm2.1-.9-1 .3c-.3-.7-.5-1.4-.3-1.4s.7.6 1.3 1.1ZM27.1 26c.2-.4.5-.1.7.3a2.3 2.3 0 0 0-.5.5v.2Z"
+                      />
+                      <path
+                        d="M27.5 28.8v.2l.3.3v-.6ZM234.6 18.7v.1ZM67.2 32l-.1-.6-.1.5.2.1zM245.1 28.7v.6c.1-.1 0-.3 0-.6ZM250.1 30.7l.5.9c-.2-.5-.3-.8-.5-.9ZM253.7 32.9a5.9 5.9 0 0 0 .4-.8ZM189 20.5a.1.1 0 0 0-.1.1c-.5.3-.2.2.1-.1ZM209.2 19.4l-.8.8c.3.3.5.4.8-.8ZM167.4 20.3Z"
+                      />
+                      <path
+                        d="M207.5 20a.5.5 0 0 0 .9.2c-.3-.2-.6-.4-.9-.2ZM269.5 40.2v.2l.2-.3ZM269.8 40.1h.3c-.1-.2-.2-.2-.3 0ZM270.7 39.7l-.6.3c.1.1.3.2.6-.3ZM265.1 37.2l-.4.6a1.5 1.5 0 0 0 .4-.6ZM263.5 36.7c.3.3.3 1.9 1 1.7l.2-.6c-.6 1-.3-2.1-1.2-1.1ZM260.4 25.5l1.1 1.1c.1-.9.1-2 .8-2-.9-2.9-.3 1.8-1.9.9ZM256.5 22.9c.8-.1.3-1.1.5-1.5s-.9.7-.5 1.5ZM225.3 14.8l.5-1.8c-.7.1-.2.7-.5 1.8ZM217.2 23.1l.3 1.3.7-1.7-1 .4zM216.7 9.1l.3-.2-1.1.5.8-.3zM162.6 1.6v2.3c.4-.3.7-3 0-2.3ZM138.8 3.8c-.3-1.1-1-1.8-1.4-.7s1.1 1 1.4.7ZM69.2 12.3l.3-.8-.7.8h.4z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              Calls on BiP!
+            </h2>
             <p>
               Another first from BiP, the leader of innovations! Thanks to the Voice and
               Video Call feature that can be made in HD quality for up to 15 people, you
@@ -24,7 +50,11 @@
 
           <!-- bip button container -->
           <div class="down-btn flex">
-            <a href="https://apps.apple.com/us/app/bip-messenger-video-call/id583274826" target="_blank" class="ico-btn flex def">
+            <a
+              href="https://apps.apple.com/us/app/bip-messenger-video-call/id583274826"
+              target="_blank"
+              class="ico-btn flex def"
+            >
               <div @click.right.prevent="" class="ico">
                 <img
                   class="def"
@@ -34,7 +64,11 @@
               </div>
               <span>iPhone</span>
             </a>
-            <a href="https://play.google.com/store/apps/details?id=com.turkcell.bip&hl=en_US&gl=US" target="_blank" class="ico-btn flex def">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.turkcell.bip&hl=en_US&gl=US"
+              target="_blank"
+              class="ico-btn flex def"
+            >
               <div @click.right.prevent="" class="ico">
                 <img
                   class="def"
@@ -295,7 +329,7 @@
         <div class="feature-section fs-right flex">
           <!-- feature text area -->
           <div class="feature-text-area fta-right">
-            <h2>channels</h2>
+            <h2>Channels</h2>
             <p>You can create your channel in BiP and reach large audiences.</p>
           </div>
 
@@ -371,7 +405,6 @@
       </div>
 
       <!-- Download button -->
-      <br /><br />
       <br /><br /><br />
       <button @click="getDownload(true)" class="btn">Download</button>
     </div>
@@ -388,7 +421,11 @@
         <!-- bip button container -->
         <div class="down-btn get-more-down flex">
           <!-- Ios download -->
-          <a href="https://apps.apple.com/us/app/bip-messenger-video-call/id583274826" target="_blank" class="ico-btn flex def">
+          <a
+            href="https://apps.apple.com/us/app/bip-messenger-video-call/id583274826"
+            target="_blank"
+            class="ico-btn flex def"
+          >
             <div @click.right.prevent="" class="ico">
               <img
                 class="def"
@@ -400,7 +437,11 @@
           </a>
 
           <!-- Android download -->
-          <a href="https://play.google.com/store/apps/details?id=com.turkcell.bip&hl=en_US&gl=US" target="_blank" class="ico-btn flex def">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.turkcell.bip&hl=en_US&gl=US"
+            target="_blank"
+            class="ico-btn flex def"
+          >
             <div @click.right.prevent="" class="ico">
               <img
                 class="def"
@@ -412,7 +453,11 @@
           </a>
 
           <!-- Mac OS download -->
-          <a href="https://bip.com/downloads/BiP-1.1.0.dmg" target="_blank" class="ico-btn flex def">
+          <a
+            href="https://bip.com/downloads/BiP-1.1.0.dmg"
+            target="_blank"
+            class="ico-btn flex def"
+          >
             <div @click.right.prevent="" class="ico">
               <svg width="100%" height="100%" viewBox="0 0 512 512">
                 <path
@@ -429,7 +474,11 @@
           </a>
 
           <!-- Windows download -->
-          <a href="https://bip.com/downloads/BiP%20Setup%201.1.0.zip" target="_blank" class="ico-btn flex def">
+          <a
+            href="https://bip.com/downloads/BiP%20Setup%201.1.0.zip"
+            target="_blank"
+            class="ico-btn flex def"
+          >
             <div @click.right.prevent="" class="ico">
               <svg width="80%" height="100%" viewBox="0 0 512 512">
                 <path
@@ -494,13 +543,19 @@
 
       <!-- Download contianer -->
       <div class="down-btn get-more-down flex">
-        <a href="https://apps.apple.com/us/app/bip-messenger-video-call/id583274826" target="_blank" class="ico-btn flex def"
+        <a
+          href="https://apps.apple.com/us/app/bip-messenger-video-call/id583274826"
+          target="_blank"
+          class="ico-btn flex def"
           ><div class="ico">
             <img src="../../asset/img/appstore.png" alt="app store bip app" class="def" />
           </div>
           <span>iPhone</span></a
         >
-        <a href="https://play.google.com/store/apps/details?id=com.turkcell.bip&hl=en_US&gl=US" target="_blank" class="ico-btn flex def"
+        <a
+          href="https://play.google.com/store/apps/details?id=com.turkcell.bip&hl=en_US&gl=US"
+          target="_blank"
+          class="ico-btn flex def"
           ><div class="ico">
             <img
               src="../../asset/img/playstore.png"
@@ -1078,13 +1133,29 @@
   justify-content: center;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   .illustration-one {
     display: none;
   }
   .illustration-container {
     top: 80px;
   }
+}
+
+/* layer text and layer container */
+.layer {
+  top: 15px;
+  left: 50px;
+  width: 100px;
+  z-index: -9;
+  position: absolute;
+}
+.layer-text {
+  position: relative;
+}
+
+.layer svg path {
+  fill: #00f2ff;
 }
 </style>
 <script>
@@ -1102,10 +1173,18 @@ export default {
       this.getdown = a;
     },
   },
+  head: {
+    title: "Bip Application ⨉ Secure audio video call chat & lot more.",
+    description: "Hello World",
+  },
 };
 </script>
 <style scoped>
 /* root all style for default element no class */
+.root {
+  font-family: bip !important;
+}
+
 img {
   width: 100%;
 }
@@ -1137,10 +1216,11 @@ h4 {
 
 /* bip logo */
 .logo {
+  top: 0;
+  left: 0;
   width: 50px;
   height: 50px;
-  margin-top: 25px;
-  margin-left: 25px;
+  position: absolute;
 }
 
 /* Slide main info flex box */
@@ -1148,10 +1228,11 @@ h4 {
   width: 95%;
   max-width: 1300px;
   margin: 0 auto;
-  margin-top: 8%;
+  margin-top: 7%;
   align-items: center;
   overflow-wrap: break-word;
   justify-content: space-between;
+  position: relative;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1179,6 +1260,11 @@ h4 {
 .bip-min-text {
   margin-left: 15px;
   text-align: left;
+}
+
+/* bip main info text headder */
+.bip-min-text h2 {
+  margin: 5px 0;
 }
 
 /* download button container */
@@ -1215,7 +1301,7 @@ h4 {
 /* bip app preview container */
 .bip-app-preview {
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
   position: relative;
 }
 
@@ -1615,13 +1701,14 @@ Download container animation */
   height: 150px;
   margin: 0 auto;
   max-width: 500px;
-  border-radius: 8px;
+  padding: 15px 0;
+  border-radius: 25px;
   background: url(../../asset/img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.466);
+  box-shadow: 2px 2px 10px #0000001a;
 }
 
 /* global award image container */
@@ -1643,7 +1730,7 @@ Download container animation */
   width: 100%;
   height: 100%;
   position: absolute;
-  backdrop-filter: blur(1px);
+  backdrop-filter: brightness(1.2);
 }
 
 /* title center */
