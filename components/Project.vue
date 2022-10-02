@@ -59,8 +59,8 @@ export default {
     return {
       projects: [
         {
-          name: "Chat Bot",
-          details: "small chat bot for web app",
+          name: "Bip App",
+          details: "best chat app review",
           to: "/projects/bip",
           img: "project-i.jpg",
         },
