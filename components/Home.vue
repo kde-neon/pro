@@ -96,9 +96,9 @@ export default {
       for (var i = 0; i < anmWord.length; i++) {
         (function (speed, i) {
           setTimeout(function () {
-            if(classAdd){
+            if (classAdd) {
               anmWord[i].classList.add("on");
-            }else {
+            } else {
               anmWord[i].classList.remove("on");
             }
           }, speed);
@@ -109,7 +109,7 @@ export default {
     // Info component all selector
     let info = document.getElementById("info");
     let infoPosition = info.getBoundingClientRect().bottom - window.innerHeight;
-    let infoImg = document.querySelector(".info-img")
+    let infoImg = document.querySelector(".info-img");
     let anmTitle = document.querySelector(".anmTitle");
 
     // Tool info component all selector
@@ -125,15 +125,13 @@ export default {
     // project component details
     let proTitle = document.querySelector(".proTitle");
     var proWord = document.querySelector(".proWord");
-    console.log(proWord)
+    console.log(proWord);
     var proSp = proWord.innerHTML.split(" ");
-    console.log(proSp)
+    console.log(proSp);
     proWord.innerHTML = "";
     proSp.forEach((i) => {
       proWord.innerHTML += `<span class="proWordSpl">${i}&nbsp;</span>`;
     });
-
-
 
     window.onscroll = () => {
       top = window.pageYOffset;
@@ -141,40 +139,40 @@ export default {
       // if clint view info component
       if (infoPosition < top) {
         anm_word(true, ".anw");
-        anm_word(false, ".buble", 100)
+        anm_word(false, ".buble", 100);
         infoImg.classList.add("on");
-        anmTitle.classList.add("on")
-      }else {
+        anmTitle.classList.add("on");
+      } else {
         anm_word(false, ".anw");
         anm_word(true, ".buble", 100);
         infoImg.classList.remove("on");
-        anmTitle.classList.remove("on")
+        anmTitle.classList.remove("on");
       }
 
       // if clint view tool component
-      if(toolPosition < top){
-        anm_word(false, ".tool-box")
-        tool.classList.remove("on")
+      if (toolPosition < top) {
+        anm_word(false, ".tool-box");
+        tool.classList.remove("on");
         toolInfo.classList.remove("on");
-      }else {
-        anm_word(true, ".tool-box")
-        tool.classList.add("on")
+      } else {
+        anm_word(true, ".tool-box");
+        tool.classList.add("on");
         toolInfo.classList.add("on");
       }
 
       // if clint view project component
-      if((projectPosition + 200) < top){
-        anm_word(false, ".project")
+      if (projectPosition + 200 < top) {
+        anm_word(false, ".project");
         anm_word(false, ".proWordSpl");
         proTitle.classList.remove("on");
-      }else {
-        anm_word(true, ".project")
+      } else {
+        anm_word(true, ".project");
         anm_word(true, ".proWordSpl");
         proTitle.classList.add("on");
       }
-
     };
   },
+
   middleware: ["scroll"],
 };
 </script>
